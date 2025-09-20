@@ -39,18 +39,21 @@ SELECT * FROM menu_items
 
 SELECT COUNT (*) FROM menu_items
 	WHERE origin = 'Italy';
-	-- Three drinks items on the menu are from Italy.
+ 
+-- Three drinks items on the menu are from Italy.
 
 SELECT * FROM menu_items
 	WHERE origin = 'Italy';
-	-- The drinks from Italy are "Negroni", "Cosmopolitan" and "Tom Collins".
+ 
+-- The drinks from Italy are "Negroni", "Cosmopolitan" and "Tom Collins".
 
 -- 6. What are the most and least expensive British dishes?
 
 SELECT * FROM menu_items
 	WHERE origin = 'United Kingdom'
 	ORDER BY price;
-	-- The cheapest item from the UK is "Leviathan".
+ 
+-- The cheapest item from the UK is "Leviathan".
 
 SELECT * FROM menu_items
 	WHERE origin = 'United Kingdom'
@@ -85,6 +88,7 @@ SELECT * FROM order_details;
 SELECT MAX (order_date), MIN (order_date) FROM order_details;
 
 -- 3. How many orders were there?
+
 SELECT COUNT (DISTINCT order_id) FROM order_details;
 
 -- 4. How many items were ordered?
