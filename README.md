@@ -111,7 +111,7 @@ GROUP BY order_id
 HAVING COUNT (item_id) > 12
 ORDER BY num_items DESC);
 
-## Section 3 - Understand the most popular items and most valuale orders
+## Section 3 - Understand the most popular items and most valuable orders
 
 -- 1. Combine the menu_items and order_details tables into a single table.
 
